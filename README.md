@@ -100,3 +100,4 @@ int main(int argc)
 ```
 注：因vscode版本不同可能生成的lauch.json和task.json可能会有所差异
 
+此时再次按F5调试，已生成对应exe文件并在终端运行
