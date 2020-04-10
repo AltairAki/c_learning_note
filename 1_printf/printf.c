@@ -8,6 +8,6 @@ int main(int argc, const char *argv[])
     printf("长度为：%d\n", len);
     printf("输出字符是:%c,输出浮点数是：%f\n", 'A', M_PI);
     printf("100的十六进制数为：0x%X\n", 100);
-    const char *ex = "你好世界";
-    printf("你定义的字符是：%s\n", ex);
+    const char *hello = "你好世界";
+    printf("你定义的字符是：%s\n", hello);
 }

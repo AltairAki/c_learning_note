@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-int main()
+int main(int argc)
 {
-    char ex[20];
+    char name[20];
     puts("输入男友的名字：");
-    scanf("%s", ex);
-    printf("亲爱的%s,我们分手吧。\n", ex);
+    scanf("%s", name);
+    printf("亲爱的%s,我们分手吧。\n", name);
     return 0;
 }
