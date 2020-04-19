@@ -16,7 +16,7 @@
 - Chinese (Simplified) Language Pack for Visual Studio Code
 
 
-## 4.新建hello_world.c
+## 4.新建hello_world.c （新建的目录不要有中文，不然编译的时候会报错）
 
 ```
 #include <stdio.h>
