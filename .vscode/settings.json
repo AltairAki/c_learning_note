@@ -1,8 +1,10 @@
 {
     "files.associations": {
         "stdio.h": "c",
-        "stddef.h": "c",
-        "float.h": "c",
-        "stdint.h": "c"
+        "stdlib.h": "c",
+        "string.h": "c",
+        "error.h": "c",
+        "unistd.h": "c",
+        "errno.h": "c"
     }
 }

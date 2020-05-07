@@ -1,8 +1,3 @@
-/*
- * @Descripttion: 
- * @Author: Altair
- * @Date: 2020-04-21 10:17:10
- */
 #include <stdalign.h>
 #include <stdbool.h>
 #include <stddef.h>
@@ -40,5 +35,4 @@ int main()
     printf("%u\n", size1); //16
     size_t size2 = sizeof(s);
     printf("%u\n", size2); //32
-    return 0;
 }

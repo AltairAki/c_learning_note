@@ -4,6 +4,8 @@
  * 
  * exec()函数替换当前进程【这个脚本即：2-1exec.c编译后的可执行文件运行时的进程】
  * 
+ * exec([运行什么程序],[运行什么程序],[命令行参数... ,最后一个命令行参数后加NULL],[环境变量（如果需要的话以..e结尾的exec函数）])
+ * 
  * 列表（参数）函数：execl()、execlp()、execle()
  * 数组（参数）函数：execv()、execvp()、execve()
  * 其中：l-参数列表 v-参数数组/向量 p-根据PATH查找 e-环境变量
@@ -22,6 +24,7 @@
 #include <errno.h>
 int main(int argc, char *argv[])
 {
+    //数组最后一项必为NULL，不然不知道什么时候结束
     char *my_env[] = {"Juice=peach and apple", NULL};
     execle("C:/code/learnning/c_learning_note/c_book/jinc/2-1dinner.exe", "C:/code/learnning/c_learning_note/c_book/jinc/2-1dinner.exe", "4", NULL, my_env);
     // puts("哥们，dinner 程序肯定发生了什么问题"); // execle执行成功，不会执行这行代码
