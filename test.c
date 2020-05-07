@@ -1,16 +1,30 @@
+/*
+ * @Descripttion: 
+ * @Author: Altair
+ * @Date: 2020-04-20 10:31:32
+ */
 #include <stdbool.h>
 #include <stdio.h>
 
 int main(int argc, const char *argv[])
 {
 
-    struct test
-    {
-        int a;
-        short b;
-        float c;
-    } t = {.a = 100};
-    printf("%f\n", t.c);
+
+    char str[20];  /*定义一个最大长度为19, 末尾是'\0'的字符数组来存储字符串*/
+    printf("请输入一个字符串:");
+    fgets(str, 7, stdin);  /*从输入流stdin即输入缓冲区中读取7个字符到字符数组str中*/
+    printf("%s\n", str);
+    return 0;
+
+    // struct test
+    // {
+    //     int a;
+    //     short b;
+    //     float c;
+    // } t = {.a = 100};
+    // printf("%f\n", t.c);
+
+    
     // char a;            // 1
     // short b;           // 2
     // int c;             // 4

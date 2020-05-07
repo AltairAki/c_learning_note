@@ -5,6 +5,7 @@
         "string.h": "c",
         "error.h": "c",
         "unistd.h": "c",
-        "errno.h": "c"
+        "errno.h": "c",
+        "signal.h": "c"
     }
 }
